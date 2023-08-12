@@ -1,0 +1,18 @@
+{
+  "name": "honda",
+  "version": "1.0.0",
+  "description": "honda showroom full website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js -e js,hbs"
+  },
+  "author": "Navneet",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^7.3.0",
+    "nodemon": "^2.0.22"
+  }
+}

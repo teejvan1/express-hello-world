@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 0.1rem solid #cdcdcd;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+header div a:link,
+header div a:visited {
+  color: black;
+}
+
+.header-img {
+  width: 17rem;
+}
+
+h1 {
+  color: red;
+  padding: 18rem 18rem 10rem;
+  font-size: 8rem;
+}
+
+.content {
+  margin-left: 47rem;
+  margin-bottom: 5rem;
+}
+
+.content p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.content p a {
+  color: black;
+}
+
+.comment form {
+  font-size: 2rem;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.comment form label {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.comment form input {
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.comment .show-comment {
+  font-size: 1.7rem;
+}
+
+.comment .show-comment {
+  margin: 0.5rem;
+}
+
+.comment .show-comment .name {
+  background-color: #a6aaae;
+  border: 0.1rem solid black;
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 4rem;
+    padding: 4rem 0 3rem;
+    text-align: center;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .content p:first-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .comment form {
+    width: 90%;
+  }
+}

@@ -1,0 +1,82 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta
+      name='Contact'
+      content='Contact information to contact us are provided.'
+    />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+    <link rel='icon' href='honda.png' />
+    <link rel='apple-touch-icon' href='honda.png' />
+
+    <link rel='stylesheet' href='css/contact.css' />
+    <script defer src='script.js'></script>
+    <title>Contact Us</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <a href='/'><span>HOME</span></a>
+      </div>
+      <div>
+        <a href='/'><img
+            class='header-img'
+            src='./images/Balajee.png'
+            alt=''
+          /></a>
+      </div>
+      <div>
+        <a href='/about'>About Us</a>
+      </div>
+    </header>
+
+    <h1>CONTACT US</h1>
+
+    <div class='content'>
+
+      <p>Call us at
+        <a href='tel: 6203225560'>6203225560</a>
+        or send us email at
+        <a
+          href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=balajeehondalkr02@gmail.com'
+        >balajeehondalkr02@gmail.com</a>.
+      </p>
+      <p>We will get back to you as soon as possible.
+      </p>
+    </div>
+
+    <div class='comment'>
+      <form action='/added' method='POST' id='myForm'>
+        <label>Ask questions:</label>
+        <input name='name' placeholder='Your name' type='text' />
+        <input name='comment' placeholder='Your Comment' type='text' />
+        <button
+          style='position: absolute;
+    top: -1000px'
+        >ejrfb
+        </button>
+      </form>
+
+      {{#each comments}}
+        <div class='show-comment'>
+          <span class='name'>{{name}}</span>
+          <span>Q.{{comment}}
+          </span>
+        </div>
+      {{/each}}
+
+    </div>
+
+    <script
+      type='module'
+      src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'
+    ></script>
+    <script
+      nomodule
+      src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'
+    ></script>
+  </body>
+</html>

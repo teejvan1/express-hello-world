@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.red {
+  background-color: red !important;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 0.1rem solid #cdcdcd;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+header div a:link,
+header div a:visited {
+  color: black;
+}
+
+.header-img {
+  width: 17rem;
+}
+
+.slides {
+  position: relative;
+}
+
+.slide-img {
+  height: 35vw;
+  width: 100%;
+}
+
+.direction {
+  color: white;
+  position: absolute;
+  top: 50%;
+  font-size: 4.5rem;
+  transform: translateY(-50%);
+}
+
+.direction:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.left {
+  left: 0;
+  user-select: none;
+}
+
+.right {
+  right: 0;
+  user-select: none;
+}
+
+.pointer {
+  padding: 1.8rem 0;
+  text-align: center;
+}
+
+.pointer button {
+  width: 1.3rem;
+  height: 1.3rem;
+  border: none;
+  border-radius: 50%;
+  margin: 0 0.7rem;
+  background-color: grey;
+  cursor: pointer;
+}
+
+.pointer button:hover {
+  background-color: red;
+}
+
+.gallery {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 27rem);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+}
+
+.ov-hidden {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.scaling-img {
+  transition: all 1s;
+}
+
+.scaling-img:hover {
+  transform: scale(1.1);
+}
+
+.one {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #007cc2;
+}
+
+.two {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+
+.three {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  background-color: #cc0001;
+}
+
+.four {
+  grid-column: 5/7;
+  grid-row: 1/2;
+}
+
+.five {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.six {
+  grid-column: 4/6;
+  grid-row: 2/3;
+}
+
+.seven {
+  grid-column: 6/7;
+  grid-row: 2/3;
+  background-color: black;
+}
+
+.eight {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.nine {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: #cc0001;
+}
+
+.ten {
+  grid-column: 3/5;
+  grid-row: 3/4;
+}
+
+.eleven {
+  grid-column: 5/7;
+  grid-row: 3/4;
+}
+
+.twelve {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  background-color: #cc0001;
+}
+
+.thirteen {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.fourteen {
+  grid-column: 3/5;
+  grid-row: 4/5;
+}
+
+.fifteen {
+  grid-column: 5/6;
+  grid-row: 4/5;
+}
+
+.sixteen {
+  grid-column: 6/7;
+  grid-row: 4/5;
+  background-color: #cc0001;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0 1.6rem;
+  font-size: 1.6rem;
+}
+
+footer a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+footer > a {
+  margin-left: 1.2rem;
+}
+
+footer a ion-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer p {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 450px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 13rem);
+  }
+  .one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .two {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+
+  .three {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .four {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .five {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .six {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+
+  .seven {
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+
+  .eight {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+
+  .nine {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .ten {
+    grid-column: 2/4;
+    grid-row: 5/6;
+  }
+
+  .eleven {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+
+  .twelve {
+    grid-column: 3/4;
+    grid-row: 6/7;
+  }
+
+  .thirteen {
+    grid-column: 1/3;
+    grid-row: 8/9;
+  }
+
+  .fourteen {
+    grid-column: 2/4;
+    grid-row: 7/8;
+  }
+
+  .fifteen {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+
+  .sixteen {
+    grid-column: 3/4;
+    grid-row: 8/9;
+  }
+}
